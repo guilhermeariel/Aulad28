@@ -2,6 +2,7 @@ package br;
 
 public class ContaBancaria {
   //ATRIBUTOS
+  //protected ideal para herança controlada
   protected double saldo;
   protected int numero;
   protected double limite;
