@@ -1,23 +1,22 @@
-# Aulad28
-Banco de Contas
-Este projeto em Java simula operações bancárias básicas utilizando conceitos de Programação Orientada a Objetos (POO), com herança e sobrescrita de métodos.
+##Banco de Contas em Java
+Este projeto simula operações bancárias simples utilizando os quatro pilares da Programação Orientada a Objetos (POO): encapsulamento, herança, polimorfismo e abstração.
 
-Estrutura do Projeto
-Classe ContaBancaria
-Contém os atributos numero, saldo e limite, além dos métodos:
+##Objetivo
+Demonstrar, por meio de um exemplo prático, como aplicar os fundamentos de POO em Java por meio de um sistema de contas bancárias com diferentes comportamentos.
 
-sacar(double valor)
+##Estrutura das Classes
+ContaBancaria
+Classe base que representa uma conta comum, com métodos para saque, depósito e consulta de saldo.
 
-depositar(double valor)
+##ContaEspecial
+Subclasse de ContaBancaria que permite saques que ultrapassam o saldo, respeitando um limite.
 
-consultarSaldo()
+##Main
+Classe de execução que cria instâncias das contas, realiza operações e exibe os resultados no console.
 
-Classe ContaEspecial
-É uma subclasse de ContaBancaria que:
-
-Permite saques acima do saldo, até o limite disponível.
-
-Sobrescreve o método sacar(double valor).
-
-Classe Main
-Realiza testes criando contas bancárias e contas especiais, executando operações como saques e depósitos
+##Fundamentos de POO aplicados
+Pilar	Aplicado?	Descrição
+Encapsulamento	✅	Atributos protegidos e manipulados apenas por métodos públicos.
+Herança	        ✅	ContaEspecial herda comportamento e atributos de ContaBancaria.
+Polimorfismo	  ✅	O método sacar() é sobrescrito em ContaEspecial com comportamento específico.
+Abstração	      ✅	As classes expõem apenas o que é necessário: o usuário interage por meio dos métodos.
