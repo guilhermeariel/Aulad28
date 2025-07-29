@@ -1,3 +1,5 @@
+package br;
+
 public class ContaBancaria {
   //ATRIBUTOS
   protected double saldo;
@@ -38,7 +40,7 @@ public class ContaBancaria {
 
   //METODOS PUBLICOS
   public boolean sacar(double valor) {
-    if (valor <= saldo && valor <= limite) {
+    if (valor <= saldo)  {
       saldo -= valor;
       return false;
     } else {
@@ -49,6 +51,7 @@ public class ContaBancaria {
 
   public void depositar(double valor) {
     saldo += valor;
+    System.out.println("Deposito realizado com sucesso " + valor);
   }
 
   public void consultarSaldo() {
